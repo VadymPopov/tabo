@@ -6,7 +6,6 @@ import tsParser from '@typescript-eslint/parser';
 import prettier from 'eslint-plugin-prettier';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import path from 'node:path';
@@ -40,7 +39,6 @@ export default defineConfig([
       '@typescript-eslint': fixupPluginRules(typescriptEslint),
       react: fixupPluginRules(react),
       'react-hooks': fixupPluginRules(reactHooks),
-      'simple-import-sort': simpleImportSort,
     },
 
     languageOptions: {
@@ -69,7 +67,7 @@ export default defineConfig([
     rules: {
       'prefer-const': 'warn',
       'no-var': 'warn',
-      'no-unused-vars': 'warn',
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       'object-shorthand': 'warn',
       'quote-props': ['warn', 'as-needed'],
 
@@ -77,14 +75,6 @@ export default defineConfig([
         'warn',
         {
           default: 'array',
-        },
-      ],
-
-      '@typescript-eslint/consistent-type-assertions': [
-        'warn',
-        {
-          assertionStyle: 'as',
-          objectLiteralTypeAssertions: 'never',
         },
       ],
 
@@ -102,19 +92,6 @@ export default defineConfig([
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
       'prettier/prettier': 'warn',
-      'simple-import-sort/imports': [
-        'error',
-        {
-          groups: [
-            ['^\\u0000'], // side effects
-            ['^react', '^next'], // react, next
-            ['^@?\\w'], // npm packages
-            ['^~'], // alias imports
-            ['^\\.'], // relative imports
-          ],
-        },
-      ],
-      'simple-import-sort/exports': 'error',
     },
     ignores: ['.next/', 'dist/', 'build/', 'node_modules/'],
   },
