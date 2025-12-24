@@ -6,7 +6,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative min-h-screen w-full flex flex-col items-center justify-center text-center px-6 pt-32 pb-24 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/ref-four.jpg')" }}
+        style={{ backgroundImage: "url('/bg/1.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
 
@@ -36,6 +36,18 @@ export default function HomePage() {
               className="px-6 py-3 border border-gray-300 text-gray-200 rounded-xl hover:bg-black/40 transition hover:cursor-pointer"
             >
               Book Officials
+            </Link>
+            <Link
+              href="/about"
+              className="px-6 py-3 bg-[#d57a1f] text-black font-semibold rounded-xl hover:opacity-80 transition hover:cursor-pointer"
+            >
+              About Us
+            </Link>
+            <Link
+              href="/contact"
+              className="px-6 py-3 border border-gray-300 text-gray-200 rounded-xl hover:bg-black/40 transition hover:cursor-pointer"
+            >
+              Contact Us
             </Link>
           </div>
         </div>

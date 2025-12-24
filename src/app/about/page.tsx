@@ -38,56 +38,41 @@ export default function page() {
     },
   ];
 
-  const statsData = [
-    { value: '240+', label: 'Active Members' },
-    { value: '170+', label: 'Clients Served' },
-    { value: '67', label: 'Years of Service' },
-    { value: 'GTHA', label: 'Coverage Area' },
-  ];
-
   return (
     <div className="text-lg">
       {/* Hero */}
-      <section className="px-6 pt-44 py-24 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-        <div className="w-full h-[450px] bg-gray-900 rounded-2xl flex items-center justify-center text-lg overflow-hidden">
-          <Image
-            src="/ref-two.webp"
-            className="w-full h-full object-cover"
-            alt="refs"
-            width={400}
-            height={600}
-          />
-        </div>
 
-        <div className="leading-relaxed space-y-6 text-justify">
-          <h3 className="text-4xl font-bold mb-10 text-[rgb(255,108,0)]">
+      <section
+        className="relative min-h-screen w-full flex flex-col items-center justify-center text-center px-6 pt-32 pb-24 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/bg/2.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
+
+        <div className="relative z-10 max-w-3xl text-start">
+          <h2 className="text-5xl font-extrabold mb-6">
             The Toronto Association of Basketball Officials (TABO) Welcomes You!
-          </h3>
+          </h2>
 
-          <p>
-            TABO is the provincially and nationally sanctioned officiating
-            organization for basketball, serving the City of Toronto since 1957.
-            TABO educates, trains, and certifies individuals interested in
-            supporting the basketball community through officiating.
-          </p>
-
-          <p>
-            As basketball officials, TABO takes pride in officiating all levels,
-            using{' '}
-            <a // CORRECTED: Proper opening <a> tag
-              href="https://about.fiba.basketball/en/our-sport/official-basketball-rules"
-              className="underline"
-            >
-              FIBA&apos;s rule set
-            </a>{' '}
-            — from elementary schools to adult leagues and everything in
-            between.
-          </p>
-
-          <p>
-            TABO is a not-for-profit, unincorporated association, and governs
-            itself via its Constitution, By-Laws, Policies and Procedures.
-          </p>
+          <div>
+            <p className="text-gray-200 text-lg leading-relaxed  text-justify">
+              TABO is the provincially and nationally sanctioned officiating
+              organization for basketball, serving the City of Toronto since
+              1957. TABO educates, trains, and certifies individuals interested
+              in supporting the basketball community through officiating. As
+              basketball officials, TABO takes pride in officiating all levels,
+              using{' '}
+              <a
+                href="https://about.fiba.basketball/en/our-sport/official-basketball-rules"
+                className="underline"
+              >
+                FIBA&apos;s rule set
+              </a>{' '}
+              — from elementary schools to adult leagues and everything in
+              between. TABO is a not-for-profit, unincorporated association, and
+              governs itself via its Constitution, By-Laws, Policies and
+              Procedures.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -109,21 +94,6 @@ export default function page() {
             Peel and Hamilton we work together to service the GTHA (Greater
             Toronto and Hamilton Area).
           </p>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10 max-w-5xl mx-auto">
-          {statsData.map((stat) => (
-            <div
-              key={stat.label}
-              className="text-center bg-white rounded-2xl py-4 px-2"
-            >
-              <div className="text-5xl  font-bold text-[rgb(255,108,0)] mb-2">
-                {stat.value}
-              </div>
-              <div className="text-black">{stat.label}</div>
-            </div>
-          ))}
         </div>
 
         <div className="mt-10 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
@@ -202,7 +172,7 @@ export default function page() {
         </div>
         <div className="w-full h-[550px] bg-gray-900 rounded-2xl flex items-center justify-center text-lg overflow-hidden mb-16">
           <Image
-            src="/ref-one.jpg"
+            src="/10.JPEG"
             className="w-full h-full object-cover"
             alt="refs"
             width={400}

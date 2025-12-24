@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { Calendar, CheckCircle, Clock, Mail, Send } from 'lucide-react';
+import { Calendar, Mail, Send } from 'lucide-react';
 import Link from 'next/link';
 
 export default function BookingOfficialsMockup() {
@@ -22,31 +22,37 @@ export default function BookingOfficialsMockup() {
 
   const assignors = [
     {
-      name: 'TBD',
-      level: "Girls' High School + Elementary",
+      name: 'Garnet Gibson',
+      level: 'Elementary',
       date: 'Sept. 1, 2025 - Dec. 31, 2025',
       email: 'assignor@example.com',
     },
     {
-      name: 'TBD',
-      level: "Boy's High School + Elementary",
+      name: 'Michael Broughton',
+      level: 'High School',
       date: 'Nov. 2025 - Spring 2026',
       email: 'assignor@example.com',
     },
     {
-      name: 'TBD',
+      name: 'Vince Pileggi',
       level: 'Recreational/Night Ball',
       date: 'Sept. 1, 2025 - Apr. 30, 2026',
       email: 'assignor@example.com',
     },
     {
-      name: 'TBD',
+      name: 'Allan Castellvi',
       level: 'Rep/Club Ball',
       date: 'Sept. 1, 2025 - Mar. 31, 2026',
       email: 'assignor@example.com',
     },
     {
-      name: 'TBD',
+      name: 'Marios Tenentes',
+      level: 'D & G League',
+      date: 'Nov. 2025 - Spring 2026',
+      email: 'assignor@example.com',
+    },
+    {
+      name: 'Lloyd Eidelman',
       leagues: [
         { level: 'Rep/Club Ball', date: 'Apr. 1, 2026 - Aug. 31, 2026' },
         {
@@ -73,28 +79,19 @@ export default function BookingOfficialsMockup() {
       {/* Hero Section */}
       <section
         className="relative min-h-screen w-full flex flex-col items-center justify-center text-center px-6 pt-32 pb-24 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/ref-three.webp')" }}
+        style={{ backgroundImage: "url('/bg/7.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
 
         <div className="relative z-10 max-w-3xl text-start space-y-6">
           <h2 className="text-5xl font-extrabold">Book Officials</h2>
 
-          <div className="flex flex-wrap gap-6 text-sm">
-            <div className="flex items-center gap-2 bg-gray-500 bg-opacity-20 px-4 py-2 rounded-full">
-              <Clock className="w-5 h-5" />
-              <span>2 Weeks Advance Notice Required</span>
-            </div>
-            <div className="flex items-center gap-2 bg-gray-500 bg-opacity-20 px-4 py-2 rounded-full">
-              <CheckCircle className="w-5 h-5" />
-              <span>Confirmation Within 24 Hours</span>
-            </div>
-          </div>
-
           <p className="text-gray-200 text-lg leading-relaxed text-justify">
-            Professional basketball officials for your games, tournaments, and
-            events across Toronto. Please confirm with the specific Assignor
-            that your request was fulfilled at least 5 days prior to your event.
+            Fully trained and Certified basketball officials for your games,
+            tournaments, and events across Toronto. To ensure availability and
+            proper coverage, requests are required at least 2 weeks in advance
+            of your event date. Please confirm with the specific Assignor that
+            your request was fulfilled at least 5 days prior to your event.
             Email addresses and phone numbers for each Assignor are noted below.
           </p>
 

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-import { AlertCircle, Clock, Mail, MapPin, Send } from 'lucide-react';
+import { AlertCircle, MapPin, Send } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -43,38 +43,6 @@ export default function ContactPage() {
         {/* Left Side - Information */}
         <div className="space-y-8">
           {/* Contact Methods */}
-          <div className="bg-transparent rounded-2xl p-8 border border-gray-800">
-            <h3 className="text-2xl font-bold mb-6 text-[rgb(255,108,0)]">
-              Contact Information
-            </h3>
-
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[rgb(255,108,0)] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6" />
-                </div>
-                <div>
-                  <div className="text-sm text-gray-400">Email Us</div>
-                  <a
-                    href="mailto:info@torontobasketballofficials.ca"
-                    className="text-[rgb(255,108,0)] hover:underline"
-                  >
-                    info@torontobasketballofficials.ca
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[rgb(255,108,0)] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6" />
-                </div>
-                <div>
-                  <div className="text-sm text-gray-400">Office Hours</div>
-                  <div className="text-white">Mon-Fri: 9AM - 5PM EST</div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Important Notes */}
           <div className="space-y-6">
