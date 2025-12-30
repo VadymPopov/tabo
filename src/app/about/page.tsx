@@ -50,12 +50,12 @@ export default function page() {
 
         <div className="relative z-10 max-w-3xl text-start">
           <h2 className="text-5xl font-extrabold mb-6">
-            The Toronto Association of Basketball Officials (TABO) Welcomes You!
+            Toronto Association of Basketball Officials (TABO)
           </h2>
 
           <div>
             <p className="text-gray-200 text-lg leading-relaxed  text-justify">
-              TABO is the provincially and nationally sanctioned officiating
+              TABO is the nationally and provincially sanctioned officiating
               organization for basketball, serving the City of Toronto since
               1957. TABO educates, trains, and certifies individuals interested
               in supporting the basketball community through officiating. As

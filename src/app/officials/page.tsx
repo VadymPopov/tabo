@@ -24,47 +24,43 @@ export default function BookingOfficialsMockup() {
     {
       name: 'Garnet Gibson',
       level: 'Elementary',
-      date: 'Sept. 1, 2025 - Dec. 31, 2025',
-      email: 'assignor@example.com',
+      date: 'Nov. 1, 2025 - May 31, 2026',
+      email: 'garnetgibson@gmail.com',
     },
     {
       name: 'Michael Broughton',
       level: 'High School',
-      date: 'Nov. 2025 - Spring 2026',
-      email: 'assignor@example.com',
+      date: 'Nov. 1, 2025 - May 31, 2026',
+      email: 'tabonightref@gmail.com',
     },
     {
       name: 'Vince Pileggi',
       level: 'Recreational/Night Ball',
-      date: 'Sept. 1, 2025 - Apr. 30, 2026',
-      email: 'assignor@example.com',
+      date: 'Jan. 1, 2025 - May 31, 2026',
+      email: 'vpileggi15@gmail.com',
     },
     {
       name: 'Allan Castellvi',
       level: 'Rep/Club Ball',
-      date: 'Sept. 1, 2025 - Mar. 31, 2026',
-      email: 'assignor@example.com',
+      date: 'Jan. 1, 2025 - May 31, 2026',
+      email: 'acastellvi@hotmail.com',
     },
     {
       name: 'Marios Tenentes',
       level: 'D & G League',
-      date: 'Nov. 2025 - Spring 2026',
-      email: 'assignor@example.com',
+      date: 'Sept. 1, 2025 - May 31, 2026',
+      email: 'taborecbballassignor@gmail.com',
     },
     {
       name: 'Lloyd Eidelman',
       leagues: [
-        { level: 'Rep/Club Ball', date: 'Apr. 1, 2026 - Aug. 31, 2026' },
         {
           level: 'Recreational/Night Ball',
-          date: 'May 1, 2026 - Aug. 31, 2026',
+          date: 'Nov 1, 2025 - Dec. 31, 2025',
         },
-        {
-          level: 'High Performance Ball',
-          date: 'Sept. 1, 2025 - Aug. 31, 2026',
-        },
+        { level: 'Summer Ball', date: 'Jun. 1, 2026 - Aug. 31, 2026' },
       ],
-      email: 'assignor@example.com',
+      email: 'tabosummerassignor@gmail.com',
     },
   ];
 
@@ -88,11 +84,12 @@ export default function BookingOfficialsMockup() {
 
           <p className="text-gray-200 text-lg leading-relaxed text-justify">
             Fully trained and Certified basketball officials for your games,
-            tournaments, and events across Toronto. To ensure availability and
-            proper coverage, requests are required at least 2 weeks in advance
-            of your event date. Please confirm with the specific Assignor that
-            your request was fulfilled at least 5 days prior to your event.
-            Email addresses and phone numbers for each Assignor are noted below.
+            tournaments, and events across the City of Toronto. To ensure
+            availability and proper coverage, requests are required at least 2
+            weeks in advance of your event date. Please confirm with the
+            specific Assignor that your request was fulfilled at least 5 days
+            prior to your event. Contact information for each Assignor are noted
+            below.
           </p>
 
           <div className="flex gap-4 justify-start">

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 
 import { AlertCircle, MapPin, Send } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -19,11 +20,22 @@ export default function ContactPage() {
   };
 
   const regionalPartners = [
-    'York Region',
-    'Durham Region',
-    'Peel Region',
-    'Barrie',
-    'Hamilton',
+    {
+      name: 'York Region',
+      href: 'https://sites.google.com/site/yorkregionbasketballofficials/home',
+    },
+    {
+      name: 'Peel Region',
+      href: 'https://www.peelrefs.ca',
+    },
+    {
+      name: 'Durham Region',
+      href: 'https://drbabo.ca',
+    },
+    {
+      name: 'Hamilton',
+      href: 'https://www.hamiltonboard.org/',
+    },
   ];
 
   return (
@@ -55,13 +67,15 @@ export default function ContactPage() {
                 </h4>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                TABO is only responsible for officiating games within the City
-                of Toronto. If your game(s) / event(s) are to be played outside
-                the City of Toronto, then please contact the appropriate
+                TABO is responsible for officiating games within the City of
+                Toronto. If your game(s) / event(s) are to be played outside the
+                City of Toronto, then please contact the appropriate
                 officials&apos; association of either{' '}
-                {regionalPartners.map((region, idx) => (
+                {regionalPartners.map(({ name, href }, idx) => (
                   <span key={idx}>
-                    <span className="text-[rgb(255,108,0)]">{region}</span>
+                    <Link href={href} className="text-[rgb(255,108,0)]">
+                      {name}
+                    </Link>
                     {idx < regionalPartners.length - 1 && ', '}
                     {idx === regionalPartners.length - 2 && ' or '}
                   </span>

@@ -28,7 +28,7 @@ export default function TABOMembership() {
           </p>
 
           <p className="text-gray-200 text-lg leading-relaxed mb-10 text-justify">
-            Join TABO and officiate games across the city of Toronto. We are
+            Join TABO and officiate games across the City of Toronto. We are
             welcoming NEW officials and EXISTING certified officials
             transferring from other boards.
           </p>

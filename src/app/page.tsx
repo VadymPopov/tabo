@@ -11,11 +11,14 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
 
         <div className="relative z-10 max-w-3xl text-start">
-          <p className="text-[#d57a1f] font-bold mb-6">
+          {/* <p className="text-[#d57a1f] font-bold mb-6">
+            Proudly serving the City of Toronto since 1957*
+          </p> */}
+          <p className="text-[#E89B0C] font-bold mb-6">
             Proudly serving the City of Toronto since 1957*
           </p>
           <h2 className="text-5xl font-extrabold mb-6">
-            TORONTO ASSOCIATION of BASKETBALL OFFICIALS
+            TORONTO ASSOCIATION OF BASKETBALL OFFICIALS
           </h2>
           <p className="text-[#d57a1f] font-bold mb-6">
             Educated · Trained · Certified · Insured.
@@ -37,6 +40,7 @@ export default function HomePage() {
             >
               Book Officials
             </Link>
+
             <Link
               href="/about"
               className="px-6 py-3 bg-[#d57a1f] text-black font-semibold rounded-xl hover:opacity-80 transition hover:cursor-pointer"
@@ -45,7 +49,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/contact"
-              className="px-6 py-3 border border-gray-300 text-gray-200 rounded-xl hover:bg-black/40 transition hover:cursor-pointer"
+              className="px-6 py-3 bg-[#d57a1f] text-black font-semibold rounded-xl hover:opacity-80 transition hover:cursor-pointer"
             >
               Contact Us
             </Link>
